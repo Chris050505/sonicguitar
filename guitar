@@ -1,0 +1,31 @@
+rick_morty="C:/Users/Christopher Lozano/Downloads/rick_morty.wav"
+
+sample rick_morty,amp: 4
+sleep 9
+
+
+
+use_synth :fm
+live_loop :bunbun do
+  8.times do
+    with_fx :echo do
+      play :g3
+      sleep 0.5
+      play:e4
+      sleep 0.5
+      play :as4
+      sleep 0.5
+      play :b4
+      sleep 0.5
+      play :c4
+      sleep 0.5
+      play :e4
+      sleep 0.5
+      play :as4
+      sleep 0.5
+      play :b4
+      sleep 0.5
+    end
+  end
+  stop
+end
